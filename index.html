@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bootstrap 4 responsive simple website -- fullyworld web tutorials</title>
+	<!-- main css file -->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+	<!-- home section  -->
+	<section class="container-fluid banner" id="home">
+		<div class="row">
+			<div class="nav2" id="nav2">
+				<i class="fa fa-close" onclick="navclose();"></i>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+				</ul>
+			</div>
+			<div class="col-md-12 navigation-bar navbar" id="navigation-bar">
+				<div class="logo navbar-brand">
+					<a href="index.html">
+						Kalya Alifa S<span>.</span>
+					</a>
+				</div>
+				<div class="menu-text"  onclick="navopen();">
+					<p class="menu-heading">MENU</p>
+					<i class="fa fa-bars"></i>
+				</div>
+			</div>
+			<div class="col-md-12 d-flex info-banner">
+				<div class="col-md-10 offset-md-1 info-heading-text">
+					<h2>WELCOME TO MY PORTOFOLIO</h2>
+					<h1>I'm an IT Programmer</h1>
+					<div class="buttons d-flex">
+						<!-- <a href="#" class="btn">START HERE</a> -->
+						<a href="https://youtube.com/channel/UCDK2M3cId_Bvy6uNSq4e7Hw" class="btn" target="_blank">SUBSCRIBE TO MY CHANNEL</a>
+					</div>
+				</div>
+				<div class="col-md-1 social-icons">
+					<a href="https://www.instagram.com/kalyasabila/" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="https://twitter.com/kalyasabila" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://youtube.com/channel/UCDK2M3cId_Bvy6uNSq4e7Hw" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+			<!-- <a href="#" class="col-md-2 offset-md-9 angle">
+				<i class="fa fa-angle-down"></i>
+				<h2>SCROLL DOWN</h2>
+			</a> -->
+		</div>
+	</section>
+
+	<!--About Section-->
+	<section class="container about" id="about">
+		<div class="light-box-intro" id="light-box-intro">
+			<i class="fa fa-close" onclick="lightboxout()"></i>
+			<iframe width="560" height="330" src="https://www.youtube.com/embed/KkzCm8hYNwA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="row">
+			<div class="col-md-12 main-about offset-md-1 d-flex"> <!--d-flex untuk membuat col bersebelahan-->
+				<div class="col-md-6 about-us-info">
+					<h1 class="about-us-info-heading">ABOUT ME</h1>
+					<p class="about-us-info-subheading">
+						I am a fresh graduate with bachelor’s degree in Computer Science from Diponegoro University. I am born in Semarang, July 15th 1998. I graduated in April 2020.
+						Enthusiactic Programmer who eager to contribute to team success through hard work, attention to detail, and excellent organizational skill. Clear understanding of Developing Application from Requirement Phase to Maintenance, including Website, Mobile, and Desktop Application. Motivated to learn, grow anad excel in Programming.
+						I am a fresh graduate with bachelor’s degree in Computer Science from Diponegoro University. I am born in Semarang, July 15th 1998. I graduated in April 2020.
+						Enthusiactic Programmer who eager to contribute to team success through hard work, attention to detail, and excellent organizational skill. Clear understanding of Developing Application from Requirement Phase to Maintenance, including Website, Mobile, and Desktop Application. Motivated to learn, grow anad excel in Programming.
+					</p>
+				</div>
+				<div class="col-md-6 about-us-intro">
+					<h2 class="about-us-intro-heading text-center">INTRO</h2>
+					<div class="image-intro-thumbnail offset-md-4 d-flex" onclick="lightboxappear()">
+						<img src="images/kalya1.jpg" class="image-responsive image-intro-about"/>
+						<i class="fa fa-play"></i>
+						<div class="circle"></div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+	<!-- script -->
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
